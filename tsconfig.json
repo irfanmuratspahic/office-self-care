@@ -1,0 +1,27 @@
+{
+  "version": "1.5.0",
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "listFiles": true,
+    "isolatedModules": false,
+    "moduleResolution": "node",
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "include": [
+    "typings/thera/thera.d.ts",
+    "typings/browser.d.ts",
+    "typings/main.d.ts",
+    "typings/meteor.d.ts",
+    "typings/meteor_server.d.ts",
+    "your_app_directory/**/*"
+  ],
+  "exclude": [ "node_modules" ],
+  "compileOnSave":false //not required but is suggested for meteor projects
+}
