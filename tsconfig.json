@@ -14,14 +14,7 @@
     "moduleResolution": "node",
     "suppressImplicitAnyIndexErrors": true
   },
-  "include": [
-    "typings/thera/thera.d.ts",
-    "typings/browser.d.ts",
-    "typings/main.d.ts",
-    "typings/meteor.d.ts",
-    "typings/meteor_server.d.ts",
-    "your_app_directory/**/*"
-  ],
-  "exclude": [ "node_modules" ],
-  "compileOnSave":false //not required but is suggested for meteor projects
+  "exclude": [
+    "node_modules"
+  ]
 }

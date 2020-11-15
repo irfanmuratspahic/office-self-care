@@ -7,6 +7,9 @@ import { WaterTrackingRoutingModule } from './water-tracking-routing.module';
   declarations: [
     WaterTrackingComponent
   ],
+  exports: [
+    WaterTrackingComponent
+  ],
   imports: [
     CommonModule,
     WaterTrackingRoutingModule

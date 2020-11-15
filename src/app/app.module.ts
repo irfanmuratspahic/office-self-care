@@ -2,6 +2,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.modules';
 import { AppComponent } from './app.component';
 import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+//import {MatCheckbox} from '@angular/material/checkbox';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSliderModule } from '@angular/material/slider';
+import {HomeModule} from "./modules/home/home.module";
+import {TrainingModule} from "./modules/training/training.module";
+import {WaterTrackingModule} from "./modules/water-tracking/water-tracking.module";
 
 @NgModule({
   declarations: [
@@ -9,7 +16,13 @@ import { BrowserModule } from "@angular/platform-browser";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatSliderModule,
+    BrowserAnimationsModule,
+    MatCheckboxModule,
+    HomeModule,
+    TrainingModule,
+    WaterTrackingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

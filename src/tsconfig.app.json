@@ -1,5 +1,20 @@
 {
-  "extends": "../tsconfig.base.json",
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "module": "esnext",
+    "types": []
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}
+
+
+ /*{
+ "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "module": "es2015",
@@ -11,11 +26,11 @@
     "polyfill.ts"
   ],
   "exclude": [
-    "**/*.spec.ts"
+    "**//*.spec.ts" ----------------- 1 slash zu viel 
   ],
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true,
     "preserveWhitespaces": true
   }
-}
+} */

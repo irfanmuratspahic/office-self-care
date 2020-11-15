@@ -7,6 +7,9 @@ import { TrainingComponent } from './pages/training/training.component';
   declarations: [
     TrainingComponent
   ],
+  exports: [
+    TrainingComponent
+  ],
   imports: [
     CommonModule,
     TrainingRoutingModule
